@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 
 import argparse
 
@@ -22,9 +22,6 @@ parser.add_argument('--switch_on_timer', '-n', action='store', default='0', type
 parser.add_argument('--switch_off_timer', '-f', action='store', default='0', type=int,
                     help='sum the integers (default: find the max)')
 
-#def nacti_cislo():
- #   while True:
-  #      odpoved = input('Zadej číslo: ')
 try:
     args = parser.parse_args()
 except SystemExit:
